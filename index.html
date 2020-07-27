@@ -18,31 +18,137 @@
 
 <body>
 
-    <form action="" class="w-25">
-        <div class="form-group">
-            <label for="emailInput">Email</label>
-            <input type="email" class="form-control" id="emailInput" aria-describedby="emailInfo">
-            <small id="emailInput" class="form-text text-muted">Only accept Gmail</small>
+    <div class="container">
+
+        <form action="" class="w-25">
+            <div class="form-group">
+                <label for="emailInput">Email</label>
+                <input type="email" class="form-control" id="emailInput" aria-describedby="emailInfo">
+                <small id="emailInput" class="form-text text-muted">Only accept Gmail</small>
+            </div>
+
+            <div class="form-group">
+                <label for="nameInput">Name</label>
+                <input type="text" class="form-control" id="nameInput">
+            </div>
+
+            <div class="form-group">
+                <label for="select1Input">Select an option</label>
+                <select class="form-control" id="select1Input">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="fileInput">Browse file: </label>
+                <input type="file" class="form-control-file" id="fileInput">
+            </div>
+
+            <button type="submit" class="btn btn-info">Submit</button>
+
+
+        </form>
+
+    </div>
+    <div class="container  d-flex justify-content-center my-4">
+        <form class="w-75">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail">Email</label>
+                    <input type="text" class="form-control" id="inputEmail4">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" id="inputAddres" class="form-control" placeholder="Address">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" id="inputCity" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select type="text" class="form-control" id="inputState">
+                        <option selected></option>
+                        <option>California</option>
+                        <option>Texas</option>
+                        <option>Dakota</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" class="form-check-input" id="gridCheck">
+                    <label for="gridCheck" class="form-check-label">Check me out</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-info">Sign In</button>
+
+        </form>
+
+
+
+
+
+
+
+    </div>
+
+    <div class="container">
+        <form action="" class="form-inline my-5">
+            <label for="inputPassword5">Password</label>
+            <input type="text" class="form-control mx-sm-3">
+        </form>
+    </div>
+
+    <!-- Jumbotron -->
+
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="display-4">This is a Jumbotron</div>
+        <p class="lead">Jumbotron lead</p>
+        <p>Jumbotron body is here</p>
+    </div>
+
+    <div class="container">
+        <div class="list-group" id="myList" role="tablist">
+            <a class="list-group-item list-group-item-action active" data-toggle="list" href="#home" role="tab">Home</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#profile" role="tab">Profile</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#messages"
+                role="tab">Messages</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#settings"
+                role="tab">Settings</a>
         </div>
 
-        <div class="form-group">
-            <label for="nameInput">Name</label>
-            <input type="text" class="form-control" id="nameInput">
+        <div class="tab-content">
+            <div class="tab-pane active" id="home" role="tabpanel">This is first</div>
+            <div class="tab-pane" id="profile" role="tabpanel">This is Second</div>
+            <div class="tab-pane" id="messages" role="tabpanel">...</div>
+            <div class="tab-pane" id="settings" role="tabpanel">...</div>
         </div>
 
-        <div class="form-group">
-            <label for="select1Input">Select an option</label>
-            <select class="form-control" id="select1Input">
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
-        </div>
-
-        <button type="submit" class="btn btn-secondary">Submit/button>
+        <script>
+            $(function () {
+                $('#myList a:last-child').tab('show')
+            })
+        </script>
+    </div>
 
 
-    </form>
+
 
 
 
